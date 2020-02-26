@@ -211,7 +211,7 @@ img {
         padding: 1rem;
     }
 
-    .wrap {
+    .wrap {         /*Use Display flex to make coloumn equal*/
         display: flex;
         flex-wrap: wrap;
     }
