@@ -1,12 +1,7 @@
 * {
     box-sizing: border-box;
 }
-/* Font familis*/
-@font-face {
-    font-family: 'Oxanium';
-    font-family: 'Odibee Sans';
-    font-family: 'Comfortaa';
-}
+
 /* Element target */
 
 h1 {
@@ -56,6 +51,10 @@ body {
 img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* ID selectors */
@@ -144,42 +143,39 @@ img {
     padding: 0;
     background: #f2f2f2;
 }
-/* ---------- Media Queries --------- */
 
-@media (max-width: 768px) {
-   
-    #footer-desktop {
-        display: none;
-     }
+#footer-desktop {
+    display: none;
+    }
     
-    .name-mobil {
-        float: left;
-        text-transform: uppercase;
+.name-mobil {
+    float: left;
+    text-transform: uppercase;
     } 
 
-    .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
     }
 
-    .header-img {
-        padding-top: 2rem;
+.header-img {
+    padding-top: 2rem;
     }
 
-    .nav-mobil {
-        float: right;
+.nav-mobil {
+    float: right;
     }
 
-    .nav-mobil a {
-        background: #f2f2f2;
-        margin: 0;
-        text-transform: uppercase;
+.nav-mobil a {
+    background: #f2f2f2;
+    margin: 0;
+    text-transform: uppercase;
     }
-    p {
-        text-align: center;
-        padding: 1rem;
+
+p {
+    text-align: center;
+     padding: 1rem;
     }
-}
 
 
 @media (min-width: 768px){
@@ -199,14 +195,18 @@ img {
     .header-img {
         float: right;
         margin-left: 1rem;
+        padding-top: 0;
     }
 
     a {
         display: inline-block;
         background: #f2f2f2;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     p {
+        text-align: left;
         padding: 1rem;
     }
 
@@ -245,8 +245,17 @@ img {
     #contact {
         max-width: 70%;
     }
+
+    #contact p {
+        text-align: center;
+    }
+
+    #footer-desktop {
+        display: block;
+        }
 }
 
+/* ---------- Media Queries --------- */
 
 @media (min-width: 1024px) {
     
