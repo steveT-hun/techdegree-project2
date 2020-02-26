@@ -191,6 +191,10 @@ p {
         padding-right: 1em;
         text-transform: uppercase;
     }
+
+    li:last-child {
+        padding-right: 0;
+    }
     
     .header-img {
         float: right;
