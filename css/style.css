@@ -1,15 +1,27 @@
 * {
     box-sizing: border-box;
 }
-
+/* Font familis*/
+@font-face {
+    font-family: 'Oxanium';
+    font-family: 'Odibee Sans';
+    font-family: 'Comfortaa';
+}
 /* Element target */
 
 h1 {
     text-align: center;
     margin: 0;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem;
     color: #fff;
     text-shadow: 1px 2px black;
+    
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oxanium', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -24,15 +36,18 @@ a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    font-family: 'Odibee Sans', Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
+    border-radius: 3px;
 }
 a:hover {
     color: orange;
 }
 
 p {
-    padding: 1em;
     line-height: 1.5;
     font-size: 1rem;
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -41,6 +56,7 @@ body {
 
 img {
     max-width: 100%;
+    border-radius: 5px;
 }
 
 
@@ -55,11 +71,23 @@ img {
     padding-bottom: 1em;
 }
 
+#portfolio h2 {
+    border-bottom: 3px solid orange;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
 
 #contact {
     text-align: center;
     padding: 1rem;
     margin: auto;
+}
+
+#contact h2 {
+    border-bottom: 3px solid orange;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 #contact span {
@@ -90,12 +118,10 @@ img {
 
 .header-img {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 .container {
-    padding-left: 1em;
-    padding-right: 1em;
     max-width: 1024px;
     margin: 0 auto;
 }
@@ -124,7 +150,7 @@ img {
 /* ---------- Media Queries --------- */
 
 @media (max-width: 768px) {
-    
+   
     #footer-desktop {
         display: none;
      }
@@ -133,6 +159,15 @@ img {
         float: left;
         text-transform: uppercase;
     } 
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .header-img {
+        padding-top: 2rem;
+    }
 
     .nav-mobil {
         float: right;
@@ -143,13 +178,15 @@ img {
         margin: 0;
         text-transform: uppercase;
     }
+    p {
+        text-align: center;
+        padding: 1rem;
+    }
 }
 
 
 @media (min-width: 768px){
     
-    
-
     .main-nav {
         display: block;
         text-align: center;
@@ -170,29 +207,38 @@ img {
         background: #f2f2f2;
     }
 
+    p {
+        padding: 1rem;
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .marketing,
     .search-page {
-        width: 49%;
+        width: 50%;
         padding-right: 1em;
         padding-left: 1em;
-        display: inline-block;
+        flex-grow: 1;
     }
 
     .travel-app,
     .map-of-sports {
-        width: 49%;
+        width: 50%;
         padding-right: 1em;
         padding-left: 1em;
-        display: inline-block;
-
+        flex-grow: 1;
+        
     }
 
     .photo-galery,
     .calculator {
-        width: 49%;
+        width: 50%;
         padding-right: 1em;
         padding-left: 1em;
-        display: inline-block;
+        flex-grow: 1;
     }
     #footer-mobil {
         display: none;
@@ -210,20 +256,18 @@ img {
     .search-page,
     .travel-app {
         display: inline-block;
-        width: 33%;  
+        width: 33.333%;  
         padding: 1em; 
-        border: 1px red solid; 
-        height: auto; 
+        flex-grow: 1;
     }
 
     .map-of-sports,
     .photo-galery,
     .calculator {
         display: inline-block;
-        width: 33%; 
+        width: 33.333%; 
         padding: 1em;
-        border: 1px red solid;
-        height: auto;
+        flex-grow: 1;
     }   
     
     .name {
