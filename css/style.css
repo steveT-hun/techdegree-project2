@@ -74,6 +74,22 @@ li {
     padding-bottom: 5px;
 }
 
+#hobbi {
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    padding-top: 2rem;
+}
+
+#hobbi h2 {
+    border-bottom: 3px solid orange;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+#hobbi-img {
+    max-width: 50%;
+}
+
 #contact {
     text-align: center;
     padding: 1rem;
@@ -136,13 +152,17 @@ li {
     float: left;
     padding-left: 1em;
     text-transform: uppercase;
+    padding-right: 6px;
+    border-right: 2px solid orange;
 }
 
 .nav-desktop a{         /* footer */
     display: inline-block;
     padding: 0;
     background: #f2f2f2;
+  
 }
+
 
 #footer-desktop {
     display: none;
@@ -152,6 +172,7 @@ li {
     float: left;
     text-transform: uppercase;
     } 
+
 
 .container {
     padding-left: 1rem;
@@ -164,6 +185,8 @@ li {
 
 .nav-mobil {
     float: right;
+    padding-right: 6px;
+    border-right: 2px solid orange;
     }
 
 .nav-mobil a {
@@ -180,6 +203,10 @@ p {
 
 @media (min-width: 768px){
     
+    .container {
+        padding: 0;
+    }
+
     .main-nav {
         display: block;
         text-align: center;
@@ -190,6 +217,10 @@ p {
         padding-left: 1em;
         padding-right: 1em;
         text-transform: uppercase;
+    }
+
+    .first p {
+        text-align: left;
     }
 
     li:last-child {
@@ -210,7 +241,7 @@ p {
     }
 
     p {
-        text-align: left;
+        text-align: center;
         padding: 1rem;
     }
 
@@ -248,15 +279,27 @@ p {
 
     #contact {
         max-width: 70%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     #contact p {
         text-align: center;
     }
-
+    
     #footer-desktop {
         display: block;
         }
+    #hobbi p {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .hobbi-img {
+        max-width: 50%;
+        margin-bottom: 2rem;
+    }
+
 }
 
 /* ---------- Media Queries --------- */
