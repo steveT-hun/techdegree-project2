@@ -124,7 +124,8 @@ li {
     background: rgb(51, 49, 49, 0.7);
 }
 
-.main-nav ul{
+.main-nav ul,
+.nav-mobil{
     padding: 0;
 }
 
@@ -173,7 +174,6 @@ li {
     }
     
 .name-mobil {
-    float: left;
     text-transform: uppercase;
     } 
 
@@ -188,8 +188,6 @@ li {
     }
 
 .nav-mobil {
-    float: right;
-    padding-right: 6px;
     border-right: 2px solid orange;
     }
 
@@ -203,6 +201,18 @@ p {
     text-align: center;
      padding: 1rem;
     }
+
+#footer-mobil {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name-mobil,
+.nav-mobil,
+.nav-mobil {
+    flex-grow: 1;
+    width: 50%;
+}
 
 
 @media (min-width: 768px){
@@ -234,6 +244,7 @@ p {
     .header-img {
         float: right;
         margin-left: 1rem;
+        margin-right: 1rem;
         padding-top: 0;
     }
 
@@ -326,8 +337,8 @@ p {
         width: 33.333%; 
         padding: 1em;
         flex-grow: 1;
-    }   
-    
+    } 
+      
     .name {
         float: left;
         text-transform: uppercase;
