@@ -204,15 +204,24 @@ p {
 
 #footer-mobil {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center
 }
 
+#footer-mobil h2 {
+    font-size: .8rem;
+}
+
+#footer-mobil a {
+    font-size: .6rem;
+}
+
+
 .name-mobil,
-.nav-mobil,
 .nav-mobil {
     flex-grow: 1;
     width: 50%;
 }
+
 
 
 @media (min-width: 768px){
@@ -246,6 +255,7 @@ p {
         margin-left: 1rem;
         margin-right: 1rem;
         padding-top: 0;
+        max-width: 40%;
     }
 
     a {
